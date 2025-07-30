@@ -18,6 +18,7 @@ for filename in os.listdir(folder_path):
             'ffmpeg', 
             '-i', wav_file,          # Input file
             '-ar', '44100',          # Set the sample rate to 44100 Hz
+            '-ac', '1',
             mp3_file                 # Output file
         ]
         
